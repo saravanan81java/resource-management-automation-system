@@ -5,15 +5,22 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.resource.management.system.model.User;
 import com.resource.management.system.repository.UserRepository;
 import com.resource.management.system.services.UserService;
 
+@Service
 public class UserServiceImpl implements UserService{
 	
-	@Autowired
     private UserRepository userRepository;
+	
+	// Constructor-based Dependency Injection
+    @Autowired
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     // Get all users
     public List<User> getAllUsers() {

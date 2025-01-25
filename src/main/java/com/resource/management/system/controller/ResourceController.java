@@ -18,8 +18,16 @@ import com.resource.management.system.services.ResourceService;
 @RestController
 @RequestMapping("/resources")
 public class ResourceController {
+	 
 	@Autowired
     private ResourceService resourceService;
+    
+	/*
+    @Autowired
+    public ResourceController(ResourceService resourceService) {
+    	this.resourceService= resourceService;
+    }
+    */
 
     @GetMapping
     public List<Resource> getAllResources() {

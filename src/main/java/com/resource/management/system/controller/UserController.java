@@ -24,6 +24,13 @@ public class UserController {
 	@Autowired
     private UserService userService;
 
+	/*
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+    */
+    
     // Fetch all users
     @GetMapping
     public List<User> getAllUsers() {
