@@ -18,9 +18,9 @@ Resource Management Automation System
 		. H2 As the database.
 		. Spring Security: For authentication/authorization.
 
-- ![plot](./Resource-GET-Request.png)
+![plot](./Resource-GET-Request.png)
   
-- ![plot](./Resource-POST-Request.png)
+![plot](./Resource-POST-Request.png)
 
 #  Base URL
 	Ensure your Spring Boot application is running locally or on a specific server. For example:
