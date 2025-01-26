@@ -11,9 +11,7 @@ import com.resource.management.system.model.Resource;
 public interface ResourceRepository extends JpaRepository<Resource, Long> {
 
     // Custom query to find resources below the threshold
-    List<Resource> findByQuantityLessThan(int threshold);
-
-	List<Resource> findByQuantityLessThanThreshold();
+    List<Resource> findByQuantityLessThan(int threshold); 
     
 
 }

@@ -13,12 +13,9 @@ import com.resource.management.system.services.ResourceService;
 @Service
 public class ResourceServiceImpl implements ResourceService{
 	
+	@Autowired
     private ResourceRepository resourceRepository;
     
-    @Autowired
-    public ResourceServiceImpl(ResourceRepository resourceRepository) {
-    	this.resourceRepository = resourceRepository;
-	}
 
     public List<Resource> getAllResources() {
         return resourceRepository.findAll();
