@@ -2,21 +2,25 @@
 Resource Management Automation System
 
 # Set Up the Project
-	.	Initialize Spring Boot Projects: Use Spring Initializr to generate projects for each microservice.
-		.	Resource Service: Handles inventory and resource tracking.
-		.	User Service: Manages users (staff, volunteers, donors).
-		.	Notification Service: Sends alerts for low stock, new donations, etc.
-		.	API Gateway: Serves as a single entry point.
-		.	Config Server: Manages centralized configurations.
-		.	Service Registry (Eureka): Enables service discovery.
-	.	Include dependencies:
-		.	Spring Web: For building REST APIs.
-		.	Spring Data JPA: For database operations.
-		.	Spring Cloud: For microservice orchestration.
-		.	Spring Boot Actuator: For monitoring.
-		.	H2: As the database.
-		.	Spring Security: For authentication/authorization.
+	A. Initialize Spring Boot Projects: 
+	   Use Spring Initializr to generate projects for each microservice.
+		. Resource Service: Handles inventory and resource tracking.
+		. User Service: Manages users (staff, volunteers, donors).
+		. Notification Service: Sends alerts for low stock, new donations, etc.
+		. API Gateway: Serves as a single entry point.
+		. Config Server: Manages centralized configurations.
+		. Service Registry (Eureka): Enables service discovery.
+	B. Include dependencies:
+		. Spring Web: For building REST APIs.
+		. Spring Data JPA: For database operations.
+		. Spring Cloud: For microservice orchestration.
+		. Spring Boot Actuator: For monitoring.
+		. H2 As the database.
+		. Spring Security: For authentication/authorization.
 
+- ![plot](./Resource-GET-Request.png)
+  
+- ![plot](./Resource-POST-Request.png)
 
 #  Base URL
 	Ensure your Spring Boot application is running locally or on a specific server. For example:
