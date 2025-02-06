@@ -1,6 +1,8 @@
 # resource-management-automation-system
 Resource Management Automation System
 
+#Test Commit for understanding
+
 # Set Up the Project
 	A. Initialize Spring Boot Projects: 
 	   Use Spring Initializr to generate projects for each microservice.
